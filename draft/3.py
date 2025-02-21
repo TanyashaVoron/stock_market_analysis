@@ -51,7 +51,6 @@ print(tabulate(df, headers='keys', tablefmt='grid', showindex=False))
 # Сохраняем в CSV
 df.to_csv('SBER_daily_prices.csv', index=False, encoding='utf-8')
 
-
 json_data = {
     'history': {
         'columns': [
@@ -68,17 +67,17 @@ json_data = {
 }
 
 json_data_new = {
-    'BOARDID':['TQBR','TQBR'],
-    'TRADEDATE':['2013-03-25','2013-03-26'],
-    'SHORTNAME':['Сбербанк','Сбербанк'],
-    'SECID':['SBER','SBER'],
-    'NUMTRADES':[183,140],
-    'VALUE':[59340002.8,126030358.8],
-    'OPEN':[96,96.58],
-    'LOW':[96,97.88],
-    'HIGH':[101.14,99.31],
-    'LEGALCLOSEPRICE':[98.66,97.13],
-    'WAPRICE':[99.95,98.19],
-    'CLOSE':[98.79,97.2],
-    'VOLUME':[593680,1283550]
+    'BOARDID': ['TQBR', 'TQBR'],
+    'TRADEDATE': ['2013-03-25', '2013-03-26'],
+    'SHORTNAME': ['Сбербанк', 'Сбербанк'],
+    'SECID': ['SBER', 'SBER'],
+    'NUMTRADES': [183, 140],
+    'VALUE': [59340002.8, 126030358.8],
+    'OPEN': [96, 96.58],
+    'LOW': [96, 97.88],
+    'HIGH': [101.14, 99.31],
+    'LEGALCLOSEPRICE': [98.66, 97.13],
+    'WAPRICE': [99.95, 98.19],
+    'CLOSE': [98.79, 97.2],
+    'VOLUME': [593680, 1283550]
 }
